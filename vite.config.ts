@@ -33,14 +33,5 @@ export default defineConfig({
         globPatterns: ['**/*.{js,css,html,json,png,svg,ico}']
       }
     })
-  ],
-  server: {
-    proxy: {
-      '/api': {
-        target: 'https://api.densu.cc',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''),
-      }
-    }
-  }
+  ]
 })
