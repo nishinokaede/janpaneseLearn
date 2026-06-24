@@ -1,4 +1,4 @@
-const BASE_URL = import.meta.env.DEV ? '/api' : 'https://api.densu.cc';
+const BASE_URL = '/api';
 
 interface ApiError {
   detail?: string;
